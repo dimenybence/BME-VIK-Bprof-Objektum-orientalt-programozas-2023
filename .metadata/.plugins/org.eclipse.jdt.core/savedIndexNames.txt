@@ -1,0 +1,16 @@
+INDEX VERSION 1.131+C:\Users\Bence\eclipse-workspace\.metadata\.plugins\org.eclipse.jdt.core
+2768712704.index
+2724917273.index
+1007576506.index
+2388924827.index
+1171447070.index
+3580739727.index
+3959137331.index
+2553741174.index
+1550247184.index
+3746794454.index
+3523216534.index
+1865797976.index
+852880776.index
+1434637314.index
+2115373415.index

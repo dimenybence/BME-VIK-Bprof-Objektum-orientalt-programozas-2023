@@ -1,0 +1,28 @@
+package telefonkonyv;
+
+import java.util.ArrayList;
+/**
+ * A Phonebook osztály heterogén kollekciót alkot a Contact osztállyal.
+ */
+public class Phonebook {
+    private ArrayList<Contact> contacts;
+
+    public Phonebook() {
+        this.contacts = new ArrayList<Contact>();
+    }
+    /**
+     * Hozzáadja a Phonebookban megadott ArrayListhez a megadott Contact-ot.
+     * @param contact
+     */
+    public void addContact(Contact contact) {
+        contacts.add(contact);
+    }
+
+    public void removeContact(Contact contact) {
+        contacts.remove(contact);
+    }
+
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+}

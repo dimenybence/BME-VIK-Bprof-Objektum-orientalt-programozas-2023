@@ -1,0 +1,53 @@
+package telefonkonyv;
+
+import java.util.Objects;
+
+/**
+ * Ez az ősosztály, amelyben Stringekként vannak tárolva az attribútumok.
+ */
+public class Contact {
+    protected String lastName;
+    protected String firstName;
+    protected String nickName;
+    protected String privateNumber;
+/**
+ * Contact konstruktora.
+ * @param lastName
+ * @param firstName
+ * @param nickName
+ * @param privateNumber
+ */
+    public Contact(String lastName, String firstName, String nickName, String privateNumber) {
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.nickName = nickName;
+        this.privateNumber = privateNumber;
+    }	
+    
+    public String getFullName() {
+		return lastName + " " + firstName;
+	}
+    
+    public String getPrivateNumber() {
+    	return privateNumber;
+    }
+    //Contact toString methodusa
+    public String toString() {
+    	if (nickName.equals("")) {
+			return lastName + " " + firstName + ": " + privateNumber;
+		}
+		else {
+			return lastName + " " + firstName + " (" + nickName + "): " + privateNumber;
+		}
+    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Contact contact = (Contact) o;
+        return Objects.equals(firstName, contact.firstName) &&
+                Objects.equals(lastName, contact.lastName) &&
+                Objects.equals(nickName, contact.nickName) &&
+                Objects.equals(privateNumber, contact.privateNumber);
+    }
+}

@@ -1,0 +1,23 @@
+package hello;
+
+import java.util.Scanner;
+
+public class HelloWorld {
+	public static void main(String[] args) {
+		/**
+		System.out.println("Hello World!");
+		**/
+		
+		Scanner f = new Scanner(System.in);
+		
+		int x1, x2, y1, y2;
+		System.out.println("Add meg x1 kordinatat:");
+		x1 = f.nextInt();
+		System.out.println("Add meg x2 kordinatat:");
+		x2 = f.nextInt();
+		System.out.println("Add meg y1 kordinatat:");
+		y1 = f.nextInt();
+		System.out.println("Add meg y2 kordinatat:");
+		y2 = f.nextInt();
+		}
+}

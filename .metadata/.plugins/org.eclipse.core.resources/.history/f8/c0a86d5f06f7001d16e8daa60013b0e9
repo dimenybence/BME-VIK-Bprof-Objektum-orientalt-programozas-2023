@@ -1,0 +1,27 @@
+package telefonkonyv;
+
+import java.util.ArrayList;
+
+public class Phonebook {
+    private ArrayList<Contact> contacts;
+
+    public Phonebook() {
+        this.contacts = new ArrayList<Contact>();
+    }
+
+    public void addContact(Contact contact) {
+        contacts.add(contact);
+    }
+    
+    public void addWorkContact(Workcontact contact) {
+        contacts.add(contact);
+    }
+
+    public void removeContact(Contact contact) {
+        contacts.remove(contact);
+    }
+
+    public ArrayList<Contact> getContacts() {
+        return contacts;
+    }
+}

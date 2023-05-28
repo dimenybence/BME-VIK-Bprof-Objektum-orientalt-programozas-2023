@@ -1,0 +1,28 @@
+package telefonkonyv;
+/**
+ * A Contact leszármazottja, hozzáadja a workNumber attributum Stringet.
+ */
+public class Workcontact extends Contact {
+    private String workNumber;
+    /**
+     * Workcontact konstruktora.
+     * @param lastName
+     * @param firstName
+     * @param nickName
+     * @param privateNumber
+     * @param workNumber
+     */
+    public Workcontact(String lastName, String firstName, String nickName, String privateNumber, String workNumber) {
+        super(lastName, firstName, nickName, privateNumber);
+        this.workNumber = workNumber;
+    }
+
+    public String getWorkNumber() {
+        return workNumber;
+    }
+
+    public String toString() {
+    	return super.toString() +", " + workNumber;
+    }
+}
+
